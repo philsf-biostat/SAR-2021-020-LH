@@ -63,6 +63,8 @@ kable(history)
 
 ## Objectives
 
+Determine the sample size to verify detect the difference of Interleukin-6 blood levels in Alpha-1 Antitrypsin deficient patients and healthy patients.
+
 ## Hypotheses
 
 # Data
