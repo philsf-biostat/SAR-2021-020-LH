@@ -42,16 +42,16 @@ data.raw <- data.raw %>%
 
 # analytical dataset ------------------------------------------------------
 
-analytical <- data.raw %>%
-  # select analytic variables
-  select(
-    id,
-    group,
-    # outcome,
-  )
+analytical <- data.raw #%>%
+  # # select analytic variables
+  # select(
+  #   id,
+  #   group,
+  #   # outcome,
+  # )
 
 # mockup of analytical dataset for SAP and public SAR
-analytical_mockup <- tibble( id = c( "1", "2", "3", "...", as.character(nrow(analytical)) ) ) %>%
+raw_mockup <- tibble( id = c( "1", "2", "3", "...", as.character(nrow(data.raw)) ) ) %>%
   left_join(data.raw %>% head(0), by = "id") %>%
   mutate_all(as.character) %>%
   replace(is.na(.), "")
