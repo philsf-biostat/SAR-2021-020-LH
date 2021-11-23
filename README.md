@@ -1,45 +1,45 @@
-<!-- Instruções -->
+<!-- Instructions -->
 
-<!-- - substituir yyyy-NNN-XX -->
-<!-- - v01: substituir mmm01/mmm02 pela milestone -->
-<!-- - v02: substituir ppp01/ppp02 pelo projeto -->
-<!-- - Remover esse bloco -->
+<!-- - substitute yyyy-NNN-XX -->
+<!-- - v01: substitute milestone in mmm01/mmm02 -->
+<!-- - v02: substitute project in ppp01/ppp02 -->
+<!-- - Remove this block -->
 
-# título
+# title
 
-Objetivo
+Objective
 
-Análise Estatística para PESSOA (LOCAL, aaaa)
+Statistical Analysis for PERSON (PLACE, yyyy)
 
-## Análises realizadas
+## Analyses performed
 
-1. Análise descritiva
-1. Análise inferencial
-1. Análise de poder
-1. Modelagem estatística
+1. Descriptive analysis
+1. Inferential analysis
+1. Power analysis
+1. Statistical models
 
-## Documentos
+## Documents
 
-### Plano Analítico (SAP)
+### Analytical Plan (SAP)
 
-<!-- - [Visualização online][sapviz-v02] -->
+<!-- - [Online visualization][sapviz-v02] -->
 <!-- - [Download][sappdf-v02] -->
 
-- [Visualização online][sapviz-v01]
+- [Online visualization][sapviz-v01]
 - [PDF][sappdf-v01]
 
-### Relatório de Análise Estatística (SAR)
+### Statistical Analysis Report (SAR)
 
-<!-- - [Visualização online][reportviz-v02] -->
+<!-- - [Online visualization][reportviz-v02] -->
 <!-- - [Download][pdf-v02] -->
 
-- [Visualização online][reportviz-v01]
+- [Online visualization][reportviz-v01]
 - [PDF][pdf-v01]
 
-## Portfólio
+## Portfolio
 
-Esta análise está incluída no portfólio do consultor.
-Outras análises também podem ser vistas em:
+This analysis is included in the consultant's portfolio.
+Other analyses performed can also be seen at:
 
 <https://philsf-biostat.github.io/>
 
