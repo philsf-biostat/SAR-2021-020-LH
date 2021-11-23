@@ -1,10 +1,3 @@
-<!-- Instructions -->
-
-<!-- - substitute 2021-020-LH -->
-<!-- - v01: substitute milestone in mmm01/mmm02 -->
-<!-- - v02: substitute project in ppp01/ppp02 -->
-<!-- - Remove this block -->
-
 # title
 
 Objective
@@ -13,10 +6,10 @@ Statistical Analysis for PERSON (PLACE, yyyy)
 
 ## Analyses performed
 
-1. Descriptive analysis
-1. Inferential analysis
+<!-- 1. Descriptive analysis -->
+<!-- 1. Inferential analysis -->
 1. Power analysis
-1. Statistical models
+<!-- 1. Statistical models -->
 
 ## Documents
 
@@ -28,13 +21,13 @@ Statistical Analysis for PERSON (PLACE, yyyy)
 - [Online visualization][sapviz-v01]
 - [PDF][sappdf-v01]
 
-### Statistical Analysis Report (SAR)
+<!-- ### Statistical Analysis Report (SAR) -->
 
-<!-- - [Online visualization][reportviz-v02] -->
-<!-- - [Download][pdf-v02] -->
+<!-- <\!-- - [Online visualization][reportviz-v02] -\-> -->
+<!-- <\!-- - [Download][pdf-v02] -\-> -->
 
-- [Online visualization][reportviz-v01]
-- [PDF][pdf-v01]
+<!-- - [Online visualization][reportviz-v01] -->
+<!-- - [PDF][pdf-v01] -->
 
 ## Portfolio
 
