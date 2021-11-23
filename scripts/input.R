@@ -11,6 +11,13 @@ set.seed(42)
 data.raw <- read_excel("dataset/il6-circadian.xlsx") %>%
   janitor::clean_names()
 
+# mockup mockup observations added to raw data
+data.raw <- data.raw %>%
+  mutate(
+    group = rep(gl(2, 5), 2),
+    outcome = rnorm(20),
+  )
+
 # data cleaning -----------------------------------------------------------
 
 data.raw <- data.raw %>%
