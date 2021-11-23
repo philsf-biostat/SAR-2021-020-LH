@@ -1,7 +1,7 @@
 ---
 title: "Analytical Plan for Sample size for the verification of possible Interleukin-6 cyrcadiam rhythm in Alpha-1 Antitrypsin deficient patients"
 subtitle: 'DOCUMENT: SAP-2021-020-LH-v01'
-author: '**From:** Felipe Figueiredo **To:** ___'
+author: '**From:** Felipe Figueiredo **To:** lameesehadda (fiverr.com)'
 # date: yyyy-mm-dd
 output:
   html_document:
