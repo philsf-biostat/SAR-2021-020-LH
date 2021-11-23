@@ -1,6 +1,6 @@
 # Sample size for the verification of possible Interleukin-6 circadian rhythm in Alpha-1 Antitrypsin deficient patients
 
-Determine the sample size to verify detect the difference of Interleukin-6 blood levels in Alpha-1 Antitrypsin deficient patients and healthy patients.
+Determine the sample size to detect the difference of Interleukin-6 blood levels between Alpha-1 Antitrypsin deficient and healthy patients.
 
 Statistical Analysis for lameesehadda at fiverr.com (Ireland, 2021)
 
