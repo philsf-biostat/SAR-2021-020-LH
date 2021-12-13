@@ -63,7 +63,7 @@ kable(history)
 
 ## Objectives
 
-Determine the sample size to detect the difference of Interleukin-6 blood levels between Alpha-1 Antitrypsin deficient and healthy patients.
+Determine the sample size to detect the difference of the daily range of Interleukin-6 blood levels between Alpha-1 Antitrypsin deficient and healthy patients.
 
 ## Hypotheses
 
@@ -101,28 +101,32 @@ The analytical dataset will be included in the private version of the report, an
 
 ### Descriptive analyses
 
-The epidemiological profile of the study participants will be described.
-Demographic
-(sex, age and BMI)
-and clinical variables
-<!-- ( [vars] ) -->
-will be described as
-mean (SD)
-<!-- median (IQR) -->
-or as counts and proportions (%), as appropriate.
-The distributions of participants' characteristics will be summarized in tables and visualized in exploratory plots.
+N/A
+
+<!-- The epidemiological profile of the study participants will be described. -->
+<!-- Demographic -->
+<!-- (sex, age and BMI) -->
+<!-- and clinical variables -->
+<!-- <!-- ( [vars] ) --> -->
+<!-- will be described as -->
+<!-- mean (SD) -->
+<!-- <!-- median (IQR) --> -->
+<!-- or as counts and proportions (%), as appropriate. -->
+<!-- The distributions of participants' characteristics will be summarized in tables and visualized in exploratory plots. -->
 
 ### Inferential analyses
 
-All comparisons between groups will be performed as univariate analyses.
-Continuous variables will be compared between groups with the
-independent t test with Welch correction.
-<!-- paired t test with Welch correction. -->
-<!-- Wilcoxon test. -->
-Differences in distribution of categorical variables will be assessed with the
-Fisher exact test.
-<!-- chi-square test. -->
-<!-- McNemar test. -->
+N/A
+
+<!-- All comparisons between groups will be performed as univariate analyses. -->
+<!-- Continuous variables will be compared between groups with the -->
+<!-- independent t test with Welch correction. -->
+<!-- <!-- paired t test with Welch correction. --> -->
+<!-- <!-- Wilcoxon test. --> -->
+<!-- Differences in distribution of categorical variables will be assessed with the -->
+<!-- Fisher exact test. -->
+<!-- <!-- chi-square test. --> -->
+<!-- <!-- McNemar test. --> -->
 
 <!-- All inferential analyses will be performed in the statistical models (described in the next section). -->
 
@@ -171,6 +175,15 @@ N/A
 This analysis will be performed using statistical software `R` version `r getRversion()`.
 
 # Observations and limitations
+
+**Direction of the difference**
+
+The AAT deficient patient IL6 blood levels may be hypothesized to be lower (higher) than the levels observed healthy patients.
+If this hypothesis holds, a left tailed (right tailed) test will have more statistical power to detect significant differences than a two-tailed test.
+If there is support in the literature for an educated guess on the direction of the difference this could improve the chance of having significant p-values in the final analysis, at the risk of not detecting a difference in the other direction.
+
+For example, if the hypothesis is specified in the left direction (group of interest has lower levels of IL6 than the healthy group) and the actual observed levels indicate that the group of interest has higher levels of inflammatory biomarkers, then the actual difference will likely not be significant in the study.
+It is recommended that such decision be made with caution.
 
 # References
 
