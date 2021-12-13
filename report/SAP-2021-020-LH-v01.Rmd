@@ -95,6 +95,10 @@ raw_mockup %>%
 
 Age at inclusion will be computed between the date of birth and the date of the first specimen collection.
 
+For each patient the peak level and the lower level of IL6 measurements will be calculated.
+The peak level (respectively, lower level) of each patient's IL6 will be calculated as the average of all peak level (respectively, lower level) measurements.
+The amplitude of each patient's IL6 blood level will be calculated as the difference between peak level and lower level.
+
 All variables in the analytical set will be labeled according to the raw data provided and values were labeled according to the data dictionary for the preparation of production-quality results tables and figures.
 
 The analytical dataset will be included in the private version of the report, and will be omitted from the public version of the report.
@@ -102,6 +106,10 @@ The analytical dataset will be included in the private version of the report, an
 # Study variables
 
 ## Primary and secondary outcomes
+
+The primary outcome for the detection of a circadian rhythm will be defined as the amplitude of the IL6 blood level which will be calculated as the difference between the peak level and the lower level of daily measurements.
+
+The secondary outcome will be defined as the the difference between the average IL6 daily amplitude between healthy and AAT-deficient patients.
 
 ## Covariates
 
