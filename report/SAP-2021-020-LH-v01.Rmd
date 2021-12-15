@@ -2,7 +2,7 @@
 title: "Sample size for the verification of possible Interleukin-6 circadian rhythm in Alpha-1 Antitrypsin deficient patients"
 subtitle: 'DOCUMENT: SAP-2021-020-LH-v01'
 author: '**From:** Felipe Figueiredo **To:** lameesehadda (fiverr.com)'
-# date: yyyy-mm-dd
+date: "`r Sys.Date()`"
 output:
   html_document:
     fig_caption: yes
@@ -63,9 +63,12 @@ kable(history)
 
 ## Objectives
 
-Determine the sample size to detect the difference of Interleukin-6 blood levels between Alpha-1 Antitrypsin deficient and healthy patients.
+Determine the sample size to detect the difference of the daily range of Interleukin-6 blood levels between Alpha-1 Antitrypsin deficient and healthy patients.
 
 ## Hypotheses
+
+The circadian rhythm in patients induces a detectable amplitude between peak and lower daily IL6 levels.
+The average IL6 daily amplitudes differ between Alpha-1 Antitrypsin deficient and healthy patients.
 
 # Data
 
@@ -74,6 +77,11 @@ source("scripts/input.R", encoding = 'UTF-8')
 ```
 
 ## Raw data
+
+A unique study ID will be created for each participant to allow tracking of consecutive IL6 blood level measurements.
+IL6 data of each participant will be collected at three different times per day.
+Each datum will have its respective date and time of speciment collection recorded.
+Participant demographic characteristics to be collected are the group to with they belong (AAT-defficient or healthy), the date of birth, sex and BMI at the date of inclusion.
 
 After the cleaning process the raw data will include `r ncol(raw_mockup)` variables.
 Table 1 shows the structure of the raw dataset.
@@ -85,6 +93,12 @@ raw_mockup %>%
 
 ## Analytical dataset
 
+Age at inclusion will be computed between the date of birth and the date of the first specimen collection.
+
+For each patient the peak level and the lower level of IL6 measurements will be calculated.
+The peak level (respectively, lower level) of each patient's IL6 will be calculated as the average of all peak level (respectively, lower level) measurements.
+The amplitude of each patient's IL6 blood level will be calculated as the difference between peak level and lower level.
+
 All variables in the analytical set will be labeled according to the raw data provided and values were labeled according to the data dictionary for the preparation of production-quality results tables and figures.
 
 The analytical dataset will be included in the private version of the report, and will be omitted from the public version of the report.
@@ -93,7 +107,15 @@ The analytical dataset will be included in the private version of the report, an
 
 ## Primary and secondary outcomes
 
+The primary outcome for the detection of a circadian rhythm will be defined as the amplitude of the IL6 blood level which will be calculated as the difference between the peak level and the lower level of daily measurements.
+
+The secondary outcome will be defined as the the difference between the average IL6 daily amplitude between healthy and AAT-deficient patients.
+
 ## Covariates
+
+No covariates will be considered for the sample size calculation.
+Age, sex and BMI will be used to adjust the estimates of the primary and secondary outcomes.
+Both raw and adjusted estimates will be computed.
 
 # Statistical methods
 
@@ -101,32 +123,38 @@ The analytical dataset will be included in the private version of the report, an
 
 ### Descriptive analyses
 
-The epidemiological profile of the study participants will be described.
-Demographic
-(sex, age and BMI)
-and clinical variables
+N/A
+
+<!-- The epidemiological profile of the study participants will be described. -->
+<!-- Demographic -->
+<!-- (sex, age and BMI) -->
+<!-- and clinical variables -->
 <!-- ( [vars] ) -->
-will be described as
-mean (SD)
+<!-- will be described as -->
+<!-- mean (SD) -->
 <!-- median (IQR) -->
-or as counts and proportions (%), as appropriate.
-The distributions of participants' characteristics will be summarized in tables and visualized in exploratory plots.
+<!-- or as counts and proportions (%), as appropriate. -->
+<!-- The distributions of participants' characteristics will be summarized in tables and visualized in exploratory plots. -->
 
 ### Inferential analyses
 
-All comparisons between groups will be performed as univariate analyses.
-Continuous variables will be compared between groups with the
-independent t test with Welch correction.
+N/A
+
+<!-- All comparisons between groups will be performed as univariate analyses. -->
+<!-- Continuous variables will be compared between groups with the -->
+<!-- independent t test with Welch correction. -->
 <!-- paired t test with Welch correction. -->
 <!-- Wilcoxon test. -->
-Differences in distribution of categorical variables will be assessed with the
-Fisher exact test.
+<!-- Differences in distribution of categorical variables will be assessed with the -->
+<!-- Fisher exact test. -->
 <!-- chi-square test. -->
 <!-- McNemar test. -->
 
 <!-- All inferential analyses will be performed in the statistical models (described in the next section). -->
 
 ### Statistical modeling
+
+N/A
 
 ## Significance and Confidence Intervals
 
@@ -171,6 +199,15 @@ N/A
 This analysis will be performed using statistical software `R` version `r getRversion()`.
 
 # Observations and limitations
+
+**Direction of the difference**
+
+The AAT deficient patient IL6 blood levels may be hypothesized to be lower (higher) than the levels observed healthy patients.
+If this hypothesis holds, a left tailed (right tailed) test will have more statistical power to detect significant differences than a two-tailed test.
+If there is support in the literature for an educated guess on the direction of the difference this could improve the chance of having significant p-values in the final analysis, at the risk of not detecting a difference in the other direction.
+
+For example, if the hypothesis is specified in the left direction (group of interest has lower levels of IL6 than the healthy group) and the actual observed levels indicate that the group of interest has higher levels of inflammatory biomarkers, then the actual difference will likely not be significant in the study.
+It is recommended that such decision be made with caution.
 
 # References
 

@@ -51,7 +51,7 @@ analytical <- data.raw #%>%
   # )
 
 # mockup of analytical dataset for SAP and public SAR
-raw_mockup <- tibble( id = c( "1", "2", "3", "...", as.character(nrow(data.raw)) ) ) %>%
+raw_mockup <- tibble( id = c( "1", "2", "3", "...", "n" ) ) %>%
   left_join(data.raw %>% head(0), by = "id") %>%
   mutate_all(as.character) %>%
   replace(is.na(.), "")
