@@ -1,8 +1,12 @@
 # setup -------------------------------------------------------------------
+library(philsfmisc)
 # library(data.table)
 library(tidyverse)
 library(readxl)
+# library(haven)
+# library(foreign)
 # library(lubridate)
+# library(naniar)
 library(labelled)
 
 # data loading ------------------------------------------------------------
@@ -18,12 +22,21 @@ data.raw <- data.raw %>%
     outcome = rnorm(20),
   )
 
+Nvar_orig <- data.raw %>% ncol
+Nobs_orig <- data.raw %>% nrow
+
 # data cleaning -----------------------------------------------------------
 
 data.raw <- data.raw %>%
-  # select() %>%
-  mutate() %>%
-  filter()
+  select(
+    everything(),
+  ) %>%
+  rename(
+  ) %>%
+  mutate(
+  ) %>%
+  filter(
+  )
 
 # data wrangling ----------------------------------------------------------
 
@@ -42,16 +55,21 @@ data.raw <- data.raw %>%
 
 # analytical dataset ------------------------------------------------------
 
-analytical <- data.raw #%>%
-  # # select analytic variables
-  # select(
-  #   id,
-  #   group,
-  #   # outcome,
-  # )
+analytical <- data.raw %>%
+  # select analytic variables
+  select(
+    # id,
+    # exposure,
+    # outcome,
+    everything(),
+  )
+
+Nvar_final <- analytical %>% ncol
+Nobs_final <- analytical %>% nrow
 
 # mockup of analytical dataset for SAP and public SAR
-raw_mockup <- tibble( id = c( "1", "2", "3", "...", "n" ) ) %>%
-  left_join(data.raw %>% head(0), by = "id") %>%
+analytical_mockup <- tibble( id = c( "1", "2", "3", "...", "N") ) %>%
+# analytical_mockup <- tibble( id = c( "1", "2", "3", "...", as.character(Nobs_final) ) ) %>%
+  left_join(analytical %>% head(0), by = "id") %>%
   mutate_all(as.character) %>%
   replace(is.na(.), "")

@@ -2,15 +2,17 @@
 
 # library(Hmisc) # describe
 # library(skimr) # skim
-# library(tableone)
 # library(gmodels) # CrossTable
 library(gtsummary)
 library(gt)
 # library(effectsize)
+# library(finalfit) # missing_compare
 
 # setup gtsummary theme
-theme_gtsummary_mean_sd() # mean/sd
-theme_gtsummary_language(language = "pt") # traduzir
+
+theme_ff_gtsummary()
+theme_gtsummary_compact()
+# theme_gtsummary_language(language = "pt") # traduzir
 
 # exploratory -------------------------------------------------------------
 
