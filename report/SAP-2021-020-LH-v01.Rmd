@@ -269,6 +269,10 @@ With sample size of `r n.large` per group a t test would be able to detect an ef
 For this effect size the total study size would require the inclusion of
 `r 2*n.large` participants.
 
+```{r fig1, fig.cap="**Figure 1** Sample size required to detect a large effect size."}
+# ![Age](../figures/outcome.png)
+knitr::include_graphics("../figures/large.png", error = FALSE)
+```
 
 ### Medium effect size
 
@@ -276,6 +280,10 @@ With sample size of `r n.medium` per group a t test would be able to detect an e
 For this effect size the total study size would require the inclusion of
 `r 2*n.medium` participants.
 
+```{r fig2, fig.cap="**Figure 2** Sample size for a medium effect size."}
+# ![Age](../figures/outcome.png)
+knitr::include_graphics("../figures/medium.png", error = FALSE)
+```
 
 ### Small effect size
 
@@ -283,6 +291,10 @@ With sample size of `r n.small` per group a t test would be able to detect an ef
 For this effect size the total study size would require the inclusion of
 `r 2*n.small` participants.
 
+```{r fig3, fig.cap="**Figure 3** Sample size required to detect a small effect size."}
+# ![Age](../figures/outcome.png)
+knitr::include_graphics("../figures/small.png", error = FALSE)
+```
 
 ## Statistical packages
 
