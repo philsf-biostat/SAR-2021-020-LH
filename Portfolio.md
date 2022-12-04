@@ -40,9 +40,9 @@ Statistical Analysis for Lameese Alhaddah (Ireland, 2021)
 
 - [PDF][sap]
 
-### Statistical Analysis Report (SAR)
+<!-- ### Statistical Analysis Report (SAR) -->
 
-- [PDF][sar]
+<!-- - [PDF][sar] -->
 
 <!-- ## Associated analyses -->
 

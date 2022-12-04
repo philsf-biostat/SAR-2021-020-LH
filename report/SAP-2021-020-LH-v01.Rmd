@@ -248,32 +248,53 @@ two-tailed.
 ## Study size and Power
 
 ```{r}
-n <- analytical %>%
-  count(group) %>%
-  pull(n)
-n1 <- n[1]
-n2 <- n[2]
-total <- sum(n)
-d <- pwr::pwr.t2n.test(n1 = n1, n2 = n2, power = .8, sig.level = .05)$d %>%
-  format.float()
-d <- pwr::pwr.t.test(n = total/2, power = .8, sig.level = .05)$d %>%
-  format.float()
+n.small <- pwr::pwr.t.test(d = .2, power = .8, sig.level = .05)$n %>% ceiling()
+n.medium <- pwr::pwr.t.test(d = .5, power = .8, sig.level = .05)$n %>% ceiling()
+n.large <- pwr::pwr.t.test(d = .8, power = .8, sig.level = .05)$n %>% ceiling()
 ```
 
-<!-- Study groups were balanced and the total sample size was `r total` including all groups. -->
+This sample size calculation assumes the exposed and control groups will be balanced in equal sizes.
 
-<!-- Study groups were not balanced with -->
-<!-- group1 with `r n1` participants -->
-<!-- and -->
-<!-- group2 with `r n2` participants -->
-<!-- with a total study size of `r total`. -->
-<!-- This power analysis adjusts for different group sizes. -->
+We will consider three possible scenarios that the main researcher could choose from, all using Cohen's d relative effect size (Cohen, 1988).
+This is a relative metric, accounting for both the mean and SD of the observed clinical measurements, thus simplifying the interpretation of the clinical effect into a single figure.
+A large effect requires less samples to be detected than a small one, but is typically considered as rarer effect.
 
-<!-- With these group sizes a t test can detect an effect size as large as -->
-<!-- **d = `r d`** -->
-<!-- with 80% power and 5% significance level (Cohen, 1988). -->
+Here we consider the small effect size defined as Cohen's d = 0.2,
+the medium as d = 0.5
+and the large effect size as d = 0.8.
 
-N/A
+### Large effect size
+
+With sample size of `r n.large` per group a t test would be able to detect an effect size of d = 0.8 with 80% power at a 5% significance level (alpha).
+For this effect size the total study size would require the inclusion of
+`r 2*n.large` participants.
+
+```{r fig1, fig.cap="**Figure 1** Sample size required to detect a large effect size."}
+# ![Age](../figures/outcome.png)
+knitr::include_graphics("../figures/large.png", error = FALSE)
+```
+
+### Medium effect size
+
+With sample size of `r n.medium` per group a t test would be able to detect an effect size of d = 0.5 with 80% power at a 5% significance level (alpha).
+For this effect size the total study size would require the inclusion of
+`r 2*n.medium` participants.
+
+```{r fig2, fig.cap="**Figure 2** Sample size for a medium effect size."}
+# ![Age](../figures/outcome.png)
+knitr::include_graphics("../figures/medium.png", error = FALSE)
+```
+
+### Small effect size
+
+With sample size of `r n.small` per group a t test would be able to detect an effect size of d = 0.2 with 80% power at a 5% significance level (alpha).
+For this effect size the total study size would require the inclusion of
+`r 2*n.small` participants.
+
+```{r fig3, fig.cap="**Figure 3** Sample size required to detect a small effect size."}
+# ![Age](../figures/outcome.png)
+knitr::include_graphics("../figures/small.png", error = FALSE)
+```
 
 ## Statistical packages
 
