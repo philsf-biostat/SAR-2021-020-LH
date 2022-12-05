@@ -14,18 +14,14 @@ tags:
   - diagnostic-models
 ---
 
-Objective
+Determine the sample size to detect the difference of the daily range of Interleukin-6 blood levels between Alpha-1 Antitrypsin deficient and healthy patients.
 
 Statistical Analysis for Lameese Alhaddah (Ireland, 2021)
 <!-- Technical Report for Lameese Alhaddah (Ireland, 2021) -->
 
 ## Analyses performed
 
-1. Descriptive analysis
-1. Inferential analysis
 1. Power analysis
-1. Missing data imputation
-1. Statistical models
 
 ## Documents
 
