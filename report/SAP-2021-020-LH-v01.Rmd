@@ -2,7 +2,7 @@
 title: "Sample size for the verification of possible Interleukin-6 circadian rhythm in Alpha-1 Antitrypsin deficient patients"
 subtitle: 'DOCUMENT: SAP-2021-020-LH-v01'
 author: '**From:** Felipe Figueiredo **To:** Lameese Alhaddah'
-date: "`r Sys.Date()`"
+date: "2022-12-04"
 output:
   html_document:
     fig_caption: yes
