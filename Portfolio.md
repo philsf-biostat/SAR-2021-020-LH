@@ -1,6 +1,6 @@
 ---
 title: 'Sample size for the verification of possible Interleukin-6 circadian rhythm in Alpha-1 Antitrypsin deficient patients'
-date: "2022-12-04"
+date: "2022-12-06"
 permalink: /portfolio/SAR-2021-020/
 redirect_from:
   - /portfolio/SAR-2021-020-LH/
@@ -50,5 +50,5 @@ Statistical Analysis for Lameese Alhaddah (Ireland, 2021)
 
 <!-- --- -->
 
-[sap]: /files/SAP-2021-020-LH-v01.pdf
+[sap]: /files/SAP-2021-020-LH-v02.pdf
 [sar]: /files/SAR-2021-020-LH-v01.pdf
