@@ -299,6 +299,12 @@ For this effect size the total study size would require the inclusion of
 knitr::include_graphics("../figures/small.png", error = FALSE)
 ```
 
+### Effect size for a given sample size
+
+If the maximum sample size feasible is N = `r 2*n_max` (divided into two groups of `r n_max`), then the minimum effect size that could be detected by this study would be d = `r d_10`.
+
+This effect can be interpreted as the average amplitude (difference between peak value and low value) being twice as large as the SD for a t test to detect it.
+
 ## Statistical packages
 
 This analysis will be performed using statistical software `R` version `r getRversion()`.
